@@ -1,0 +1,16 @@
+target ‘AndyNewFram’ do
+pod 'SVProgressHUD','~> 1.1.3'
+pod 'AFNetworking'
+pod 'IQKeyboardManager'
+pod 'Masonry'
+pod 'MJExtension'
+pod 'SDAutoLayout'
+pod 'HMSegmentedControl'
+pod 'YYText'
+pod 'MBProgressHUD', '~> 0.9.1'
+pod 'JPush'
+pod 'MJRefresh'
+#pod 'SDWebImage'
+pod 'MWPhotoBrowser'
+end
+    
