@@ -112,6 +112,7 @@
 		2197FEA21E9F048600F4AE82 /* SelfInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2197FEA11E9F048600F4AE82 /* SelfInfoViewController.m */; };
 		219C21611E9DFAAD002247F5 /* ChatListIMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 219C21601E9DFAAD002247F5 /* ChatListIMViewController.m */; };
 		219C21641E9DFB21002247F5 /* AddressBookIMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 219C21631E9DFB21002247F5 /* AddressBookIMViewController.m */; };
+		21AB1BC81EB2F20600223F42 /* MyXJYChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21AB1BC71EB2F20600223F42 /* MyXJYChartViewController.m */; };
 		21B1CA131EB17ADD00793F8D /* addMatters@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 21B1CA0B1EB17ADD00793F8D /* addMatters@2x.png */; };
 		21B1CA141EB17ADD00793F8D /* addMatters@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 21B1CA0C1EB17ADD00793F8D /* addMatters@3x.png */; };
 		21B1CA151EB17ADD00793F8D /* addSchedule@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 21B1CA0D1EB17ADD00793F8D /* addSchedule@2x.png */; };
@@ -406,6 +407,8 @@
 		219C21601E9DFAAD002247F5 /* ChatListIMViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatListIMViewController.m; sourceTree = "<group>"; };
 		219C21621E9DFB21002247F5 /* AddressBookIMViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressBookIMViewController.h; sourceTree = "<group>"; };
 		219C21631E9DFB21002247F5 /* AddressBookIMViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressBookIMViewController.m; sourceTree = "<group>"; };
+		21AB1BC61EB2F20600223F42 /* MyXJYChartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyXJYChartViewController.h; sourceTree = "<group>"; };
+		21AB1BC71EB2F20600223F42 /* MyXJYChartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyXJYChartViewController.m; sourceTree = "<group>"; };
 		21B1CA0B1EB17ADD00793F8D /* addMatters@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "addMatters@2x.png"; sourceTree = "<group>"; };
 		21B1CA0C1EB17ADD00793F8D /* addMatters@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "addMatters@3x.png"; sourceTree = "<group>"; };
 		21B1CA0D1EB17ADD00793F8D /* addSchedule@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "addSchedule@2x.png"; sourceTree = "<group>"; };
@@ -1038,6 +1041,15 @@
 			path = HyphenateFullSDK;
 			sourceTree = "<group>";
 		};
+		21AB1BC51EB2F1F300223F42 /* MyXJYChartController */ = {
+			isa = PBXGroup;
+			children = (
+				21AB1BC61EB2F20600223F42 /* MyXJYChartViewController.h */,
+				21AB1BC71EB2F20600223F42 /* MyXJYChartViewController.m */,
+			);
+			path = MyXJYChartController;
+			sourceTree = "<group>";
+		};
 		21B1CA1B1EB17D1300793F8D /* VideoModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -1243,6 +1255,7 @@
 		21FEB5371E97786C006B3A1E /* VideoController */ = {
 			isa = PBXGroup;
 			children = (
+				21AB1BC51EB2F1F300223F42 /* MyXJYChartController */,
 				21FEB5381E977883006B3A1E /* RDVFirstViewController.h */,
 				21FEB5391E977883006B3A1E /* RDVFirstViewController.m */,
 				21FEB53B1E97789A006B3A1E /* RDVSecondViewController.h */,
@@ -1603,6 +1616,7 @@
 				21FEB4D11E976A18006B3A1E /* AppDelegate.m in Sources */,
 				2187BF3B1EAEDEFF003A87B6 /* EaseImageView.m in Sources */,
 				2187BE661EAEDB19003A87B6 /* BlurEffectMenu.m in Sources */,
+				21AB1BC81EB2F20600223F42 /* MyXJYChartViewController.m in Sources */,
 				21B1CA1F1EB17D3500793F8D /* VideoModel.m in Sources */,
 				2187BF231EAEDEFF003A87B6 /* EaseEmotionEscape.m in Sources */,
 				214175F91EAF3B9900E8377E /* UITableView+HYBCacheHeight.m in Sources */,

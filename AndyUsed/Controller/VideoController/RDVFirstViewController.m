@@ -11,6 +11,8 @@
 #import "VideoModel.h"
 
 #import "VideoTableViewCell.h"
+
+#import "MyXJYChartViewController.h"
 @interface RDVFirstViewController ()<UITableViewDataSource,UITableViewDelegate,MWPhotoBrowserDelegate>{
     UITableView* _tableView;
 }
@@ -38,10 +40,13 @@
     self.title = @"小工具";
     self.view.backgroundColor = [UIColor whiteColor];
     self.dataSourceArr = [[NSMutableArray alloc] init];
-    VideoModel* model = [[VideoModel alloc] init];
-    model.name = @"音视频播放";
-    [self.dataSourceArr addObject:model];
     
+    NSArray* titiA = [[NSArray alloc] initWithObjects:@"视频播放",@"XJYChart", nil];
+    for (int i = 0; i < titiA.count; i++) {
+        VideoModel* model = [[VideoModel alloc] init];
+        model.name = titiA[i];
+        [self.dataSourceArr addObject:model];
+    }
     [self createTableView];
 }
 
@@ -67,9 +72,16 @@
 
 #pragma mark - tableVie点击cell
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    [_photoBrowser setCurrentPhotoIndex:0];
-    UIViewController *rootController = [self.keyWindow rootViewController];
-    [rootController presentViewController:self.photoNavigationController animated:YES completion:nil];
+    if (0 == indexPath.row) {
+        [_photoBrowser setCurrentPhotoIndex:0];
+        UIViewController *rootController = [self.keyWindow rootViewController];
+        [rootController presentViewController:self.photoNavigationController animated:YES completion:nil];
+    }else if (1 == indexPath.row){
+        MyXJYChartViewController* vc = [[MyXJYChartViewController alloc] init];
+        vc.title = @"XJYChart";
+        [self.navigationController pushViewController:vc animated:YES];
+    }
+    
 }
 
 #pragma mark - 自定义tableView

@@ -13,7 +13,9 @@ pod 'MJRefresh'
 #pod 'SDWebImage'
 #图片 视频查看  环信里边也用到了
 pod 'MWPhotoBrowser'
-
+#一个浮动tf、tv
 pod 'JVFloatLabeledTextField'
+#图表框架 10.3以后才行
+#pod 'XJYChart'
 end
     
