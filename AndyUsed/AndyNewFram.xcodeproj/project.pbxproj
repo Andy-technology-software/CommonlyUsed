@@ -106,7 +106,6 @@
 		2187BF401EAEDEFF003A87B6 /* EaseRecordView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2187BEFE1EAEDEFF003A87B6 /* EaseRecordView.m */; };
 		2187BF411EAEDEFF003A87B6 /* EaseConversationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2187BF011EAEDEFF003A87B6 /* EaseConversationCell.m */; };
 		2187BF421EAEDEFF003A87B6 /* EaseUIResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2187BF031EAEDEFF003A87B6 /* EaseUIResource.bundle */; };
-		2187BF431EAEDEFF003A87B6 /* Hyphenate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2187BF051EAEDEFF003A87B6 /* Hyphenate.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		2187BF441EAEDEFF003A87B6 /* Hyphenate.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 2187BF061EAEDEFF003A87B6 /* Hyphenate.podspec */; };
 		2197FEA21E9F048600F4AE82 /* SelfInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2197FEA11E9F048600F4AE82 /* SelfInfoViewController.m */; };
 		219C21611E9DFAAD002247F5 /* ChatListIMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 219C21601E9DFAAD002247F5 /* ChatListIMViewController.m */; };
@@ -695,7 +694,6 @@
 				2119A7651E9B132E002F73E0 /* UIKit.framework in Frameworks */,
 				21D815DE1EA07A7B003AF6DC /* CoreMedia.framework in Frameworks */,
 				21D815E61EA07A93003AF6DC /* ImageIO.framework in Frameworks */,
-				2187BF431EAEDEFF003A87B6 /* Hyphenate.framework in Frameworks */,
 				21D815E41EA07A8D003AF6DC /* MobileCoreServices.framework in Frameworks */,
 				21D815E21EA07A87003AF6DC /* AVFoundation.framework in Frameworks */,
 				21D815E01EA07A81003AF6DC /* AudioToolbox.framework in Frameworks */,
