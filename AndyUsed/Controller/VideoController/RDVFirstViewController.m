@@ -13,6 +13,8 @@
 #import "VideoTableViewCell.h"
 
 #import "MyXJYChartViewController.h"
+
+#import "EChartViewController.h"
 @interface RDVFirstViewController ()<UITableViewDataSource,UITableViewDelegate,MWPhotoBrowserDelegate>{
     UITableView* _tableView;
 }
@@ -27,6 +29,7 @@
 @implementation RDVFirstViewController
 
 - (void)viewWillAppear:(BOOL)animated{
+    self.view.backgroundColor = [UIColor whiteColor];
     self.videos = [[NSMutableArray alloc] init];
     MWPhoto *video = [MWPhoto photoWithURL:[NSURL URLWithString:@"https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=79027038,1838220333&fm=80&w=179&h=119&img.JPEG"]];
     video.videoURL = [[NSURL alloc] initWithString:@"http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4"];
@@ -41,7 +44,7 @@
     self.view.backgroundColor = [UIColor whiteColor];
     self.dataSourceArr = [[NSMutableArray alloc] init];
     
-    NSArray* titiA = [[NSArray alloc] initWithObjects:@"视频播放",@"XJYChart", nil];
+    NSArray* titiA = [[NSArray alloc] initWithObjects:@"视频播放",@"XJYChart",@"EChart", nil];
     for (int i = 0; i < titiA.count; i++) {
         VideoModel* model = [[VideoModel alloc] init];
         model.name = titiA[i];
@@ -57,7 +60,6 @@
     _tableView.dataSource = self;
     _tableView.delegate = self;
     UIImageView *tableBg = [[UIImageView alloc] initWithImage:nil];
-    tableBg.backgroundColor = [UIColor colorWithRed:219/255.0 green:225/255.0 blue:230/255.0 alpha:1];
 //    [_tableView setBackgroundView:tableBg];
     //分割线类型
     _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
@@ -79,6 +81,10 @@
     }else if (1 == indexPath.row){
         MyXJYChartViewController* vc = [[MyXJYChartViewController alloc] init];
         vc.title = @"XJYChart";
+        [self.navigationController pushViewController:vc animated:YES];
+    }else if (2 == indexPath.row){
+        EChartViewController* vc = [[EChartViewController alloc] init];
+        vc.title = @"EChart";
         [self.navigationController pushViewController:vc animated:YES];
     }
     

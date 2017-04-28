@@ -65,8 +65,14 @@
 //看图片、视频
 #import "MWPhotoBrowser.h"
 
-//
+//浮动  登录用了
 #import "JVFloatLabeledTextField.h"
 #import "JVFloatLabeledTextView.h"
+
+//图标
+#import "EColumnChart.h"
+
+
+
 
 #endif /* PrefixHeader_pch */

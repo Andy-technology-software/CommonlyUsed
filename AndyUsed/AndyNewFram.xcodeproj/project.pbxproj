@@ -112,6 +112,7 @@
 		2197FEA21E9F048600F4AE82 /* SelfInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2197FEA11E9F048600F4AE82 /* SelfInfoViewController.m */; };
 		219C21611E9DFAAD002247F5 /* ChatListIMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 219C21601E9DFAAD002247F5 /* ChatListIMViewController.m */; };
 		219C21641E9DFB21002247F5 /* AddressBookIMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 219C21631E9DFB21002247F5 /* AddressBookIMViewController.m */; };
+		21A0D8E91EB3186A00E7347C /* EChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A0D8E81EB3186A00E7347C /* EChartViewController.m */; };
 		21AB1BC81EB2F20600223F42 /* MyXJYChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21AB1BC71EB2F20600223F42 /* MyXJYChartViewController.m */; };
 		21B1CA131EB17ADD00793F8D /* addMatters@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 21B1CA0B1EB17ADD00793F8D /* addMatters@2x.png */; };
 		21B1CA141EB17ADD00793F8D /* addMatters@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 21B1CA0C1EB17ADD00793F8D /* addMatters@3x.png */; };
@@ -407,6 +408,8 @@
 		219C21601E9DFAAD002247F5 /* ChatListIMViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatListIMViewController.m; sourceTree = "<group>"; };
 		219C21621E9DFB21002247F5 /* AddressBookIMViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressBookIMViewController.h; sourceTree = "<group>"; };
 		219C21631E9DFB21002247F5 /* AddressBookIMViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressBookIMViewController.m; sourceTree = "<group>"; };
+		21A0D8E71EB3186A00E7347C /* EChartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EChartViewController.h; sourceTree = "<group>"; };
+		21A0D8E81EB3186A00E7347C /* EChartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EChartViewController.m; sourceTree = "<group>"; };
 		21AB1BC61EB2F20600223F42 /* MyXJYChartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyXJYChartViewController.h; sourceTree = "<group>"; };
 		21AB1BC71EB2F20600223F42 /* MyXJYChartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyXJYChartViewController.m; sourceTree = "<group>"; };
 		21B1CA0B1EB17ADD00793F8D /* addMatters@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "addMatters@2x.png"; sourceTree = "<group>"; };
@@ -1041,6 +1044,15 @@
 			path = HyphenateFullSDK;
 			sourceTree = "<group>";
 		};
+		21A0D8E61EB3182C00E7347C /* EChartController */ = {
+			isa = PBXGroup;
+			children = (
+				21A0D8E71EB3186A00E7347C /* EChartViewController.h */,
+				21A0D8E81EB3186A00E7347C /* EChartViewController.m */,
+			);
+			path = EChartController;
+			sourceTree = "<group>";
+		};
 		21AB1BC51EB2F1F300223F42 /* MyXJYChartController */ = {
 			isa = PBXGroup;
 			children = (
@@ -1255,6 +1267,7 @@
 		21FEB5371E97786C006B3A1E /* VideoController */ = {
 			isa = PBXGroup;
 			children = (
+				21A0D8E61EB3182C00E7347C /* EChartController */,
 				21AB1BC51EB2F1F300223F42 /* MyXJYChartController */,
 				21FEB5381E977883006B3A1E /* RDVFirstViewController.h */,
 				21FEB5391E977883006B3A1E /* RDVFirstViewController.m */,
@@ -1596,6 +1609,7 @@
 				215BAB981E9DDDA5001A028C /* SingleChatViewController.m in Sources */,
 				2187BF1B1EAEDEFF003A87B6 /* NSString+Valid.m in Sources */,
 				21FEBAB21E97818A006B3A1E /* FMResultSet.m in Sources */,
+				21A0D8E91EB3186A00E7347C /* EChartViewController.m in Sources */,
 				21FEB50C1E977047006B3A1E /* RDVTabBarController.m in Sources */,
 				2187BF0F1EAEDEFF003A87B6 /* EMCDDeviceManagerBase.m in Sources */,
 				219C21641E9DFB21002247F5 /* AddressBookIMViewController.m in Sources */,

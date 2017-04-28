@@ -14,6 +14,9 @@
 
 @implementation MyXJYChartViewController
 
+- (void)viewWillAppear:(BOOL)animated{
+    [[self rdv_tabBarController] setTabBarHidden:YES animated:YES];
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
