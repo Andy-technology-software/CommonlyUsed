@@ -131,7 +131,7 @@
     _tempColor = eColumn.barColor;
     eColumn.barColor = [UIColor blackColor];
     
-    _textLable.text = [NSString stringWithFormat:@"%.1f",eColumn.eColumnDataModel.value];
+    _textLable.text = [NSString stringWithFormat:@"总额：%.1f",eColumn.eColumnDataModel.value];
 
 }
 
@@ -142,6 +142,8 @@ fingerDidEnterColumn:(EColumn *)eColumn
      taking adventage of the event handling system of the Echart.
      You can do even better effects here, according to your needs.*/
     NSLog(@"Finger did enter %d", eColumn.eColumnDataModel.index);
+    _textLable.text = [NSString stringWithFormat:@"总额：%.1f万元",eColumn.eColumnDataModel.value];
+    
     CGFloat eFloatBoxX = eColumn.frame.origin.x + eColumn.frame.size.width * 1.25;
     CGFloat eFloatBoxY = eColumn.frame.origin.y + eColumn.frame.size.height * (1-eColumn.grade);
     if (_eFloatBox)
@@ -156,7 +158,6 @@ fingerDidEnterColumn:(EColumn *)eColumn
         _eFloatBox = [[EFloatBox alloc] initWithPosition:CGPointMake(eFloatBoxX, eFloatBoxY) value:eColumn.eColumnDataModel.value unit:@"万元" title:@"总额"];
         _eFloatBox.alpha = 0.0;
         [eColumnChart addSubview:_eFloatBox];
-        
     }
     eFloatBoxY -= (_eFloatBox.frame.size.height + eColumn.frame.size.width * 0.25);
     _eFloatBox.frame = CGRectMake(eFloatBoxX, eFloatBoxY, _eFloatBox.frame.size.width, _eFloatBox.frame.size.height);
