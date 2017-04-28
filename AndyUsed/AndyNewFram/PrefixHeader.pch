@@ -65,4 +65,8 @@
 //看图片、视频
 #import "MWPhotoBrowser.h"
 
+//
+#import "JVFloatLabeledTextField.h"
+#import "JVFloatLabeledTextView.h"
+
 #endif /* PrefixHeader_pch */

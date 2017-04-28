@@ -11,6 +11,9 @@ pod 'MBProgressHUD', '~> 0.9.1'
 pod 'JPush'
 pod 'MJRefresh'
 #pod 'SDWebImage'
+#图片 视频查看  环信里边也用到了
 pod 'MWPhotoBrowser'
+
+pod 'JVFloatLabeledTextField'
 end
     
