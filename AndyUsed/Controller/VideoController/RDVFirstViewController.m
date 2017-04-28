@@ -15,6 +15,8 @@
 #import "MyXJYChartViewController.h"
 
 #import "EChartViewController.h"
+
+#import "GoodsListViewController.h"
 @interface RDVFirstViewController ()<UITableViewDataSource,UITableViewDelegate,MWPhotoBrowserDelegate>{
     UITableView* _tableView;
 }
@@ -44,7 +46,7 @@
     self.view.backgroundColor = [UIColor whiteColor];
     self.dataSourceArr = [[NSMutableArray alloc] init];
     
-    NSArray* titiA = [[NSArray alloc] initWithObjects:@"视频播放",@"XJYChart",@"EChart", nil];
+    NSArray* titiA = [[NSArray alloc] initWithObjects:@"视频播放",@"XJYChart",@"EChart",@"商城列表 + 下拉菜单 + 支付", nil];
     for (int i = 0; i < titiA.count; i++) {
         VideoModel* model = [[VideoModel alloc] init];
         model.name = titiA[i];
@@ -85,6 +87,9 @@
     }else if (2 == indexPath.row){
         EChartViewController* vc = [[EChartViewController alloc] init];
         vc.title = @"EChart";
+        [self.navigationController pushViewController:vc animated:YES];
+    }else if (3 == indexPath.row){
+        GoodsListViewController* vc = [[GoodsListViewController alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
     }
     

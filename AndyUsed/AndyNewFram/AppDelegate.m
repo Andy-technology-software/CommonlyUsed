@@ -35,6 +35,9 @@
     [self.window makeKeyAndVisible];
     
     [self customizeInterface];
+    /**************************************************************注册微信支付*********************************************************************************************/
+
+    [WXApi registerApp:MXWechatAPPID withDescription:@"微信支付"];
     
     /**************************************************************本地推送*********************************************************************************************/
     
@@ -488,6 +491,78 @@
     [JPUSHService handleRemoteNotification:userInfo];
     
     //    之前是在这里边加的点击响应操作  低版本<10.0
+}
+
+/*********************************************************************支付回调****************************************************************************************************/
+
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
+    //如果极简 SDK 不可用,会跳转支付宝钱包进行支付,需要将支付宝钱包的支付结果回传给 SDK if ([url.host isEqualToString:@"safepay"]) {
+    [[AlipaySDK defaultService] processOrderWithPaymentResult:url standbyCallback:^(NSDictionary *resultDic) {
+        NSLog(@"result = %@",resultDic);
+    }];
+    if ([url.host isEqualToString:@"platformapi"]){//支付宝钱包快登授权返回 authCode
+        [[AlipaySDK defaultService] processAuthResult:url standbyCallback:^(NSDictionary *resultDic) {
+            NSLog(@"result = %@",resultDic);
+        }];
+    }
+    
+    //银联
+    [[UPPaymentControl defaultControl] handlePaymentResult:url completeBlock:^(NSString *code, NSDictionary *data) {
+        
+        //结果code为成功时，先校验签名，校验成功后做后续处理
+        if([code isEqualToString:@"success"]) {
+            
+            //数据从NSDictionary转换为NSString
+            NSDictionary *data;
+            NSData *signData = [NSJSONSerialization dataWithJSONObject:data
+                                                               options:0
+                                                                 error:nil];
+            NSString *sign = [[NSString alloc] initWithData:signData encoding:NSUTF8StringEncoding];
+            
+            //判断签名数据是否存在
+            if(data == nil){
+                //如果没有签名数据，建议商户app后台查询交易结果
+                return;
+            }
+            
+            //验签证书同后台验签证书
+            //此处的verify，商户需送去商户后台做验签
+            if([self verify:sign]) {
+                //支付成功且验签成功，展示支付成功提示
+                NSLog(@"银联支付成功");
+            }
+            else {
+                //验签失败，交易结果数据被篡改，商户app后台查询交易结果
+            }
+        }
+        else if([code isEqualToString:@"fail"]) {
+            //交易失败
+        }
+        else if([code isEqualToString:@"cancel"]) {
+            //交易取消
+        }
+    }];
+    
+    //微信支付
+    return [WXApi handleOpenURL:url delegate:[WXApiManager sharedManager]];
+    
+}
+
+- (BOOL)verify:(NSString*)verify{
+    return YES;
+}
+
+#pragma mark - 微信支付回调
+
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url
+{
+    return  [WXApi handleOpenURL:url delegate:[WXApiManager sharedManager]];
+}
+
+// NOTE: 9.0以后使用新API接口
+- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<NSString*, id> *)options
+{
+    return [WXApi handleOpenURL:url delegate:[WXApiManager sharedManager]];
 }
 
 @end

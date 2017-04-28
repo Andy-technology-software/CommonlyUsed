@@ -69,10 +69,15 @@
 #import "JVFloatLabeledTextField.h"
 #import "JVFloatLabeledTextView.h"
 
-//图标
+//图表
 #import "EColumnChart.h"
 
-
+//支付宝
+#import "AlipayHeader.h"
+//银联
+#import "UPPaymentControl.h"
+//微信
+#import "MXWechatConfig.h"
 
 
 #endif /* PrefixHeader_pch */
