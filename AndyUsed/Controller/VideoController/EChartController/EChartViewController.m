@@ -136,8 +136,7 @@
 }
 
 - (void)eColumnChart:(EColumnChart *)eColumnChart
-fingerDidEnterColumn:(EColumn *)eColumn
-{
+fingerDidEnterColumn:(EColumn *)eColumn{
     /**The EFloatBox here, is just to show an example of
      taking adventage of the event handling system of the Echart.
      You can do even better effects here, according to your needs.*/
@@ -170,14 +169,12 @@ fingerDidEnterColumn:(EColumn *)eColumn
 }
 
 - (void)eColumnChart:(EColumnChart *)eColumnChart
-fingerDidLeaveColumn:(EColumn *)eColumn
-{
+fingerDidLeaveColumn:(EColumn *)eColumn{
     NSLog(@"Finger did leave %d", eColumn.eColumnDataModel.index);
     
 }
 
-- (void)fingerDidLeaveEColumnChart:(EColumnChart *)eColumnChart
-{
+- (void)fingerDidLeaveEColumnChart:(EColumnChart *)eColumnChart{
     if (_eFloatBox)
     {
         [UIView animateWithDuration:0.5 delay:0 options:UIViewAnimationOptionTransitionNone animations:^{
