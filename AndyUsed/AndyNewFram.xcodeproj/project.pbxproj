@@ -60,7 +60,6 @@
 		2187BF111EAEDEFF003A87B6 /* wav.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2187BE881EAEDEFF003A87B6 /* wav.mm */; };
 		2187BF121EAEDEFF003A87B6 /* EMVoiceConverter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2187BE8A1EAEDEFF003A87B6 /* EMVoiceConverter.mm */; };
 		2187BF131EAEDEFF003A87B6 /* libopencore-amrnb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2187BE8E1EAEDEFF003A87B6 /* libopencore-amrnb.a */; };
-		2187BF141EAEDEFF003A87B6 /* libopencore-amrwb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2187BE921EAEDEFF003A87B6 /* libopencore-amrwb.a */; };
 		2187BF151EAEDEFF003A87B6 /* EaseSDKHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2187BE951EAEDEFF003A87B6 /* EaseSDKHelper.m */; };
 		2187BF161EAEDEFF003A87B6 /* EaseConversationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2187BE981EAEDEFF003A87B6 /* EaseConversationModel.m */; };
 		2187BF171EAEDEFF003A87B6 /* EaseMessageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2187BE9A1EAEDEFF003A87B6 /* EaseMessageModel.m */; };
@@ -695,7 +694,6 @@
 				21A0DA1E1EB33A9E00E7347C /* libssl.a in Frameworks */,
 				2119A7651E9B132E002F73E0 /* UIKit.framework in Frameworks */,
 				21D815DE1EA07A7B003AF6DC /* CoreMedia.framework in Frameworks */,
-				2187BF141EAEDEFF003A87B6 /* libopencore-amrwb.a in Frameworks */,
 				21D815E61EA07A93003AF6DC /* ImageIO.framework in Frameworks */,
 				2187BF431EAEDEFF003A87B6 /* Hyphenate.framework in Frameworks */,
 				21D815E41EA07A8D003AF6DC /* MobileCoreServices.framework in Frameworks */,
