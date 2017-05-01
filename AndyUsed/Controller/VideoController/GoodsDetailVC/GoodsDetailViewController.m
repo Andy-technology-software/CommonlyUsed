@@ -24,7 +24,7 @@
 }
 
 - (void)makeBottomView{
-    UIView* _view = [MyController viewWithFrame:CGRectMake(0, [MyController getScreenHeight] - 40, [MyController getScreenWidth], 40)];
+    UIView* _view = [MyController viewWithFrame:CGRectMake(0, 100, [MyController getScreenWidth], 40)];
     _view.backgroundColor = [UIColor greenColor];
     [self.view addSubview:_view];
     

@@ -17,13 +17,15 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    self.navigationController.navigationBar.barTintColor = [MyController colorWithHexString:@"eeeeee"];
-    self.navigationController.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName: [UIColor whiteColor],
-                                                                    NSFontAttributeName : [UIFont boldSystemFontOfSize:16]};
+//    self.navigationController.navigationBar.barTintColor = [MyController colorWithHexString:@"eeeeee"];
+//    self.navigationController.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName: [UIColor whiteColor],
+//                                                                    NSFontAttributeName : [UIFont boldSystemFontOfSize:16]};
     
-    self.view.backgroundColor = [MyController colorWithHexString:@"f6f6f6"];
+//    self.view.backgroundColor = [MyController colorWithHexString:@"f6f6f6"];
     
-    [self createLeftNvc];
+//    [self createLeftNvc];
+    
+    self.view.backgroundColor = [UIColor whiteColor];
 }
 - (void)createLeftNvc{
     UIButton*rightButton = [[UIButton alloc]initWithFrame:CGRectMake(0,0,27,27)];

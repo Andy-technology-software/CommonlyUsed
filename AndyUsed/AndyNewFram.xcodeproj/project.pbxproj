@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		211357D81EAEF6DC002CDAAD /* Hyphenate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2187BF051EAEDEFF003A87B6 /* Hyphenate.framework */; };
-		211357D91EAEF6DC002CDAAD /* Hyphenate.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2187BF051EAEDEFF003A87B6 /* Hyphenate.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2113823A1EA04AFD00BB2600 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 211382391EA04AFD00BB2600 /* LoginViewController.m */; };
 		2119A7651E9B132E002F73E0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2119A7641E9B132E002F73E0 /* UIKit.framework */; };
 		2119A7671E9B14D7002F73E0 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2119A7661E9B14D7002F73E0 /* libz.tbd */; };
@@ -106,7 +104,6 @@
 		2187BF401EAEDEFF003A87B6 /* EaseRecordView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2187BEFE1EAEDEFF003A87B6 /* EaseRecordView.m */; };
 		2187BF411EAEDEFF003A87B6 /* EaseConversationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2187BF011EAEDEFF003A87B6 /* EaseConversationCell.m */; };
 		2187BF421EAEDEFF003A87B6 /* EaseUIResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2187BF031EAEDEFF003A87B6 /* EaseUIResource.bundle */; };
-		2187BF441EAEDEFF003A87B6 /* Hyphenate.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 2187BF061EAEDEFF003A87B6 /* Hyphenate.podspec */; };
 		2197FEA21E9F048600F4AE82 /* SelfInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2197FEA11E9F048600F4AE82 /* SelfInfoViewController.m */; };
 		219C21611E9DFAAD002247F5 /* ChatListIMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 219C21601E9DFAAD002247F5 /* ChatListIMViewController.m */; };
 		219C21641E9DFB21002247F5 /* AddressBookIMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 219C21631E9DFB21002247F5 /* AddressBookIMViewController.m */; };
@@ -206,6 +203,10 @@
 		21FEBAC31E97871E006B3A1E /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 21FEBAC21E97871E006B3A1E /* libsqlite3.tbd */; };
 		21FEBAC51E978773006B3A1E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21FEBAC41E978773006B3A1E /* Foundation.framework */; };
 		2D2AADB0F0F79D536B5F154D /* libPods-AndyNewFram.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8424DD2227977A7A39456F0B /* libPods-AndyNewFram.a */; };
+		ECADF3351EB78AEF003A29F5 /* Hyphenate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECADF3331EB78AEF003A29F5 /* Hyphenate.framework */; };
+		ECADF3361EB78AEF003A29F5 /* Hyphenate.podspec in Resources */ = {isa = PBXBuildFile; fileRef = ECADF3341EB78AEF003A29F5 /* Hyphenate.podspec */; };
+		ECADF3371EB78C5C003A29F5 /* Hyphenate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECADF3331EB78AEF003A29F5 /* Hyphenate.framework */; };
+		ECADF3381EB78C5C003A29F5 /* Hyphenate.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ECADF3331EB78AEF003A29F5 /* Hyphenate.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -232,7 +233,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				211357D91EAEF6DC002CDAAD /* Hyphenate.framework in Embed Frameworks */,
+				ECADF3381EB78C5C003A29F5 /* Hyphenate.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -428,8 +429,6 @@
 		2187BF001EAEDEFF003A87B6 /* EaseConversationCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EaseConversationCell.h; sourceTree = "<group>"; };
 		2187BF011EAEDEFF003A87B6 /* EaseConversationCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EaseConversationCell.m; sourceTree = "<group>"; };
 		2187BF031EAEDEFF003A87B6 /* EaseUIResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = EaseUIResource.bundle; sourceTree = "<group>"; };
-		2187BF051EAEDEFF003A87B6 /* Hyphenate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Hyphenate.framework; sourceTree = "<group>"; };
-		2187BF061EAEDEFF003A87B6 /* Hyphenate.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Hyphenate.podspec; sourceTree = "<group>"; };
 		2197FEA01E9F048600F4AE82 /* SelfInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelfInfoViewController.h; sourceTree = "<group>"; };
 		2197FEA11E9F048600F4AE82 /* SelfInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelfInfoViewController.m; sourceTree = "<group>"; };
 		219C215B1E9DF8E9002247F5 /* AndyNewFram.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AndyNewFram.entitlements; sourceTree = "<group>"; };
@@ -670,6 +669,8 @@
 		21FEBAC41E978773006B3A1E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8424DD2227977A7A39456F0B /* libPods-AndyNewFram.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AndyNewFram.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAF83220E7169A0E39C98D11 /* Pods-AndyNewFram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AndyNewFram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AndyNewFram/Pods-AndyNewFram.debug.xcconfig"; sourceTree = "<group>"; };
+		ECADF3331EB78AEF003A29F5 /* Hyphenate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Hyphenate.framework; sourceTree = "<group>"; };
+		ECADF3341EB78AEF003A29F5 /* Hyphenate.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Hyphenate.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -688,6 +689,7 @@
 				21A0DA221EB33BF900E7347C /* CFNetwork.framework in Frameworks */,
 				21A0DA201EB33BE500E7347C /* CoreTelephony.framework in Frameworks */,
 				21A0DA1D1EB33A9E00E7347C /* libcrypto.a in Frameworks */,
+				ECADF3351EB78AEF003A29F5 /* Hyphenate.framework in Frameworks */,
 				21A0DA1C1EB33A9E00E7347C /* AlipaySDK.framework in Frameworks */,
 				21A0D9881EB336EA00E7347C /* libPaymentControl.a in Frameworks */,
 				21A0DA1E1EB33A9E00E7347C /* libssl.a in Frameworks */,
@@ -698,7 +700,7 @@
 				21D815E21EA07A87003AF6DC /* AVFoundation.framework in Frameworks */,
 				21D815E01EA07A81003AF6DC /* AudioToolbox.framework in Frameworks */,
 				21A0D9891EB336EA00E7347C /* libWeChatSDK.a in Frameworks */,
-				211357D81EAEF6DC002CDAAD /* Hyphenate.framework in Frameworks */,
+				ECADF3371EB78C5C003A29F5 /* Hyphenate.framework in Frameworks */,
 				2187BF131EAEDEFF003A87B6 /* libopencore-amrnb.a in Frameworks */,
 				2119A7711E9B1513002F73E0 /* CoreMotion.framework in Frameworks */,
 				21FEBAC51E978773006B3A1E /* Foundation.framework in Frameworks */,
@@ -1204,15 +1206,6 @@
 			path = resources;
 			sourceTree = "<group>";
 		};
-		2187BF041EAEDEFF003A87B6 /* HyphenateFullSDK */ = {
-			isa = PBXGroup;
-			children = (
-				2187BF051EAEDEFF003A87B6 /* Hyphenate.framework */,
-				2187BF061EAEDEFF003A87B6 /* Hyphenate.podspec */,
-			);
-			path = HyphenateFullSDK;
-			sourceTree = "<group>";
-		};
 		21A0D8E61EB3182C00E7347C /* EChartController */ = {
 			isa = PBXGroup;
 			children = (
@@ -1614,6 +1607,7 @@
 		21FEB4FF1E976F80006B3A1E /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				ECADF3321EB78AEF003A29F5 /* HyphenateFullSDK */,
 				21A0D9A71EB33A9E00E7347C /* IntegratedAlipay */,
 				21A0D98C1EB336F700E7347C /* WechatTool */,
 				21A0D96B1EB336EA00E7347C /* paymentcontrol */,
@@ -1623,7 +1617,6 @@
 				214175F41EAF3B9900E8377E /* HYBMasonryAutoCellHeight */,
 				214175DD1EAF38C100E8377E /* CycleScrollView */,
 				2187BE671EAEDEFF003A87B6 /* EaseUI */,
-				2187BF041EAEDEFF003A87B6 /* HyphenateFullSDK */,
 				2187BE631EAEDB19003A87B6 /* BlurEffectMenu */,
 				21614DAD1EA6EFF800B8FAF8 /* GetIP */,
 				21614DA61EA6EAE800B8FAF8 /* GetOnlyUUID */,
@@ -1823,6 +1816,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		ECADF3321EB78AEF003A29F5 /* HyphenateFullSDK */ = {
+			isa = PBXGroup;
+			children = (
+				ECADF3331EB78AEF003A29F5 /* Hyphenate.framework */,
+				ECADF3341EB78AEF003A29F5 /* Hyphenate.podspec */,
+			);
+			path = HyphenateFullSDK;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1950,10 +1952,10 @@
 				21FEB5311E977085006B3A1E /* tabbar_selected_background@2x.png in Resources */,
 				21FEB5301E977085006B3A1E /* tabbar_selected_background.png in Resources */,
 				2187BF081EAEDEFF003A87B6 /* EaseUI.podspec in Resources */,
+				ECADF3361EB78AEF003A29F5 /* Hyphenate.podspec in Resources */,
 				2182071A1EA4BBB000580042 /* 徐仁强工作周报.xlsx in Resources */,
 				218205641EA459AF00580042 /* logout.png in Resources */,
 				218207121EA4B93900580042 /* TTOpenInAppActivity7@2x.png in Resources */,
-				2187BF441EAEDEFF003A87B6 /* Hyphenate.podspec in Resources */,
 				21FEB52E1E977085006B3A1E /* tabbar_normal_background.png in Resources */,
 				21B1CA151EB17ADD00793F8D /* addSchedule@2x.png in Resources */,
 				21FEB5341E977085006B3A1E /* third_selected.png in Resources */,

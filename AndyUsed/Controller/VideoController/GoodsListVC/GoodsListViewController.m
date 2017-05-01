@@ -62,7 +62,7 @@
 }
 
 - (void)viewWillAppear:(BOOL)animated{
-    [[self rdv_tabBarController] setTabBarHidden:NO animated:YES];
+    [[self rdv_tabBarController] setTabBarHidden:YES animated:YES];
 }
 
 - (void)makeData{
@@ -81,7 +81,7 @@
 
 - (void)makeMenuView{
     // 创建menu
-    WJDropdownMenu *menu = [[WJDropdownMenu alloc]initWithFrame:CGRectMake(0, [MyController isIOS7], self.view.frame.size.width, 40)];
+    WJDropdownMenu *menu = [[WJDropdownMenu alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 40)];
     menu.delegate = self;         //  设置代理
     [self.view addSubview:menu];
     self.menu = menu;
@@ -235,7 +235,7 @@
 #pragma mark - 初始化tableView
 - (void)createTableView{
     self.automaticallyAdjustsScrollViewInsets = NO;
-    _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, [MyController isIOS7] + 40, self.view.frame.size.width, self.view.frame.size.height - [MyController isIOS7] - 69 - 20) style:UITableViewStylePlain];
+    _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 40, self.view.frame.size.width, self.view.frame.size.height - [MyController isIOS7] - 40) style:UITableViewStylePlain];
     _tableView.dataSource = self;
     _tableView.delegate = self;
     UIImageView *tableBg = [[UIImageView alloc] initWithImage:nil];
