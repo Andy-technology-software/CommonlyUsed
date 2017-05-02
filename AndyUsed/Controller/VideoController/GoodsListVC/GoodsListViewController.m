@@ -14,7 +14,7 @@
 
 #import "WJDropdownMenu.h"
 
-#import "GoodsDetailViewController.h"
+#import "PayViewController.h"
 @interface GoodsListViewController ()<UITableViewDataSource,UITableViewDelegate,WJMenuDelegate>{
     UITableView* _tableView;
     
@@ -276,7 +276,7 @@
 #pragma mark - tableVie点击cell
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     GoodsListModel* model = self.datasourceArr[indexPath.row];
-    GoodsDetailViewController* vc = [[GoodsDetailViewController alloc] init];
+    PayViewController* vc = [[PayViewController alloc] init];
 //    vc.presentId = model.idStr;
     [self.navigationController pushViewController:vc animated:YES];
 }
